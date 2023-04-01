@@ -20,7 +20,7 @@ class Person {
 
 let p1 = new Person("João");
 let p2 = new Person("Maria");
-let p3 = new Person("Pedro");
+let p3 = new Person("Paulo");
 
 p1.takeAStep();
 p1.takeAStep();
