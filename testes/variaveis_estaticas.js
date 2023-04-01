@@ -12,4 +12,4 @@ class Person {
 }
 
 let p1 = new Person("Gabriel")
-p1.sayHi();
+p1.sayHi( );
