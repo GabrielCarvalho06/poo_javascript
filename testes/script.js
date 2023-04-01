@@ -1,5 +1,5 @@
 class Person {
-
+    static hands = 2;
     age = 0;
 
     constructor(name) {
@@ -7,24 +7,9 @@ class Person {
     }
 
     sayHi() {
-        console.log(`${this.name} diz OI`);
+        console.log(`Oi, meu nome é ${this.name} e tenho ${Person.hands} mãos`);
     }
 }
 
-class Student extends Person {
-
-
-    constructor(name, matricula) {
-        super(name);
-        this.matricula = matricula;
-    }
-
-    sayHello() {
-        super.sayHi();
-    }
-}
-
-let p1 = new Student("Gabriel", 1);
-p1.age = 20;
-
-p1.sayHello();
+let p1 = new Person("Gabriel")
+p1.sayHi();
